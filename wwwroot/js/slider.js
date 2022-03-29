@@ -40,3 +40,4 @@ function showSlides(n) {
 var interval = 1000;
 
 let timerId = setInterval(() => plusSlide(), 10000);
+

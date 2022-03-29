@@ -30,12 +30,11 @@ header {
   z-index: 1;
 }
 .container{
-  margin: 0px auto;
-  padding: 0px auto;
   display: flex;
   flex-direction: column;
 }
 .header__info{
+  margin-bottom: 20pt;
   padding: 20pt;
   align-self: center;
   max-width:1180pt;
@@ -58,7 +57,6 @@ header {
   align-items: flex-start;
 }
 .header__info-logo {
-  z-index: 3;
 }
 .header__logo {
   flex: 0 0 120px;
@@ -66,7 +64,7 @@ header {
   overflow:hidden;
 }
 .header__logo img{
-  max-width: 100%;
+  min-width: 100%;
   display: block;
 }
 
@@ -84,11 +82,11 @@ display: block;
 
 .header__body {
   position: relative;
-  z-index: 2;
   display: flex;
   justify-content: space-between;
   height: 100px;
   align-items: center;
+  border-color: #b2b4b3;
 }
 
 .header__burger {
@@ -98,10 +96,11 @@ display: block;
 .header__menu {
   width: 100%;
   height: 100%;
+  background-color:#b2b4b3;
 }
 
+
 .header__list {
-  z-index: 5;
   width: 100%;
   height: 100%;
   display: flex;
@@ -116,7 +115,7 @@ display: block;
   display: flex;
   align-items:center;
   justify-content: center;
-  background-color:#b2b4b3;
+  
   
 }
 
