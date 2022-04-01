@@ -148,6 +148,13 @@ display: block;
   border: 3pt 5pt 7pt 9pt;
   border-bottom: 5pt;
 }
+@media (max-width:1160pt)
+{
+  .header__link 
+  {
+    font-size: 15pt;
+  }
+}
 
 .content{
   width: 100%;
