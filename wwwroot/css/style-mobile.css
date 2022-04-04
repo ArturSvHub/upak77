@@ -1,3 +1,13 @@
+@media (max-width:600px)
+{
+  .catalog 
+  {
+    grid-template-columns: repeat(1,1fr);
+    gap: 1%;
+  }
+}
+
+
 @media (max-width:720pt) 
 {
   .header__container {}
@@ -234,6 +244,23 @@
     stroke-dasharray: 90 207;
     stroke-dashoffset: -134;
     stroke-width: 6;
+  }
+  
+  .catalog{
+    
+  margin-bottom: 550px;
+  }
+  .footer__social {
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__social-links {
+
+    max-width: 35pt;
+    max-height: 35pt;
   }
   
 
