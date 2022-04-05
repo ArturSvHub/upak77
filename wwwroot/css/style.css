@@ -226,48 +226,24 @@ display: block;
 }
 
 .footer{
-  display: flex;
-  bottom: 0;justify-content: center;
   width: 100%;
-  height: 200pt;
-  background-color: rosybrown;
+  height: 100%;
+  background-color: rgb(102, 102, 102);
   margin-top: 50pt;
 }
-
-.footer__wrapper{
-  margin-top: 20pt;
-  align-self: center;
-  max-width: 1180pt;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  width: 100%;
+.footer__wrapper {
 }
-
+.footer__description {
+}
+.footer__links {
+}
+.footer__form {
+}
 .footer__social {
-  margin-top: 20pt;
-  margin-bottom: 20pt;
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
+}
+.footer__copy {
 }
 
-.footer__social-links {
-
-  max-width: 50pt;
-  max-height: 50pt;
-}
-.footer__social-links img{
-  width: 100%;
-  height: 100%;
-}
-.footer__contacts {
-}
-.footer__contacts a{
-  text-decoration:dashed;
-  display: inline;
-}
 #burger, [for=burger]{
     display: none;
 }

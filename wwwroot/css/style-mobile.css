@@ -248,20 +248,14 @@
   
   .catalog{
     
-  margin-bottom: 550px;
+  margin-bottom: 5g50px;
   }
-  .footer__social {
-    margin-top: 20pt;
-    margin-bottom: 20pt;
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-  }
-  .footer__social-links {
-
-    max-width: 35pt;
-    max-height: 35pt;
-  }
+ .footer__wrapper{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
   
 
 }
