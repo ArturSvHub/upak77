@@ -1,0 +1,29 @@
+{
+  "name": "upak77",
+  "version": "0.0.5",
+  "description": "Main site LLC Ultrapack",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.27.9",
+    "gulp": "^4.0.2",
+    "gulp-scss": "^1.4.0",
+    "scss": "^0.2.4"
+  },
+  "devDependencies": {
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.50.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArturSvHub/upak77.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArturSvHub/upak77/issues"
+  },
+  "homepage": "https://github.com/ArturSvHub/upak77#readme"
+}
