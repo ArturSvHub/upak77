@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
-$accent-color: #ce2874;
+$acent-color: #ce2874;
 $second-color: #5593dd;
 
 * {
@@ -207,7 +207,7 @@ header {
   background-color: #fff;
   color: black;
 
-  border-bottom: 5pt solid $accent-color;
+  border-bottom: 5pt solid $acent-color;
 }
 
 .slider__text {
@@ -299,6 +299,7 @@ h3 {
     font-size: 32px;
     line-height: 1.8;
   }
+  
 }
 
 .footer,
