@@ -31,8 +31,19 @@ footer {
   display: block;
 }
 
+p {
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 16pt;
+}
+
 body {
   background-color: #eceeed;
+}
+
+#burger,
+[for=burger] {
+  display: none;
 }
 
 .wrapper {
@@ -189,6 +200,10 @@ header {
   border-bottom: 5pt solid #ce2874;
 }
 
+.slider__text {
+  display: none;
+}
+
 .content {
   width: 90%;
   margin: auto auto;
@@ -197,15 +212,11 @@ header {
   flex-direction: column;
   justify-content: center;
 }
-.content h3 {
+
+h3 {
   padding-block: 10pt;
   line-height: 1.5em;
   font-size: 2em;
-}
-.content p {
-  text-align: center;
-  line-height: 1.5em;
-  font-size: 16pt;
 }
 
 .content__description-list {
@@ -262,6 +273,15 @@ header {
 .catalog__card a:hover {
   background-color: #fff;
   color: black;
+}
+
+.about p span {
+  font-weight: bold;
+}
+
+.about__ul span {
+  font-size: 32px;
+  line-height: 1.8;
 }
 
 .footer,
@@ -424,11 +444,6 @@ header {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-}
-
-#burger,
-[for=burger] {
-  display: none;
 }
 
 @media (max-width: 1200px) {

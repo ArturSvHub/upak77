@@ -39,11 +39,15 @@
 .header__info-first,
 .header__info-second,
 .header__menu,
-.content,
 .footer__wrapper {
     padding: 0;
     margin: 0;
     width: 100%;
+  }
+
+  .content,
+.wrapper {
+    width: 90%;
   }
 
   .header__info {
@@ -150,10 +154,6 @@
     text-transform: uppercase;
     font-size: 16pt;
     text-decoration: none;
-  }
-
-  .slider__text {
-    display: none;
   }
 
   [for=burger] {

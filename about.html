@@ -79,7 +79,7 @@
     <div class="content">
       <div class="content__description about">
         <div class="about__first">
-          <h1>О Компании</h1>
+          <h2>О Компании</h2>
           <p><span>Торгово-производственная компания «УЛЬТРАПАК»</span> - современная, динамично развивающаяся компания
             на рынке упаковочных материалов в Московском регионе,
             является крупным производителем и поставщиком упаковочных материалов и сопутствующих товаров. Наша компания
@@ -90,7 +90,7 @@
             размеров его бизнеса.
             Мы заботимся о качестве продукции и стремимся к более полному удовлетворению запросов клиентов.</p>
         </div>
-        <div class="carousel">
+        <!--<div class="carousel">
           <div class="swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide"><img src="/wwwroot/img/about/about-02.jpg" alt=""></div>
@@ -107,9 +107,9 @@
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
           </div>
-        </div>
+        </div>-->
         <div class="about__second">
-          <ul><span>Причины работать с нами:</span>
+          <ul class="about__ul"><span>Причины работать с нами:</span>
             <li>Индивидуальный подход к каждому покупателю</li>
             <li>Собственное производство</li>
             <li>Выгодные цены специально для Вас</li>
@@ -118,6 +118,7 @@
             <li>Все что нужно для упаковки. Все в одном месте по адресу - Москва, ул. Ткацкая, д. 5А, стр. 1</li>
             <li>Коллектив профессиональных работников по упаковке</li>
           </ul>
+
           <p>Продажа упаковки в нашей компании выполняется по четко отработанной схеме, напрямую с нашего склада.
             Плотная связь с заводами и прямое общение с нашими клиентами,
             помогает нам предоставить по максимуму полный упаковочный ассортимент продукции высокого качества, по
@@ -132,105 +133,112 @@
             с обливом),
             краги, рукавицы, диспенсеры для скотча и многое другое. </p>
         </div>
-        <div class="about__third">
-          <ul><span>Как работают наши менеджеры?</span>
-            <li>Вы звоните нам / Отправляете заявку на нашу почту zakaz@upak77.ru</li>
-            <li>Менеджер в течении короткого времени связывается с Вами, даёт полную консультацию по выбранному товару,
-              и уточняет детали Вашего заказа сроки / расчет стоимости / объемы</li>
-            <li>В ответ на Вашу заявку Вы получаете Счет на оплату</li>
-            <li>После 100% оплаты, мы собираем Ваш заказ, запускаем производство</li>
-            <li>Оповещаем Вас о готовности заказа / Осуществляем Вам доставку</li>
-          </ul>
+        <div class="about__third row">
+          <div class="col-md">
+            <ul class="about__ul"><span>Как работают наши менеджеры?</span>
+              <li>Вы звоните нам / Отправляете заявку на нашу почту zakaz@upak77.ru</li>
+              <li>Менеджер в течении короткого времени связывается с Вами, даёт полную консультацию по выбранному
+                товару,
+                и уточняет детали Вашего заказа сроки / расчет стоимости / объемы</li>
+              <li>В ответ на Вашу заявку Вы получаете Счет на оплату</li>
+              <li>После 100% оплаты, мы собираем Ваш заказ, запускаем производство</li>
+              <li>Оповещаем Вас о готовности заказа / Осуществляем Вам доставку</li>
+            </ul>
+          </div>
+          <div class="col-md">
+            <h4>Так-же вы можете написать нам ниже на форму обратной связи:</h4>
+            <form action="" method="post">
+              <div class="mb-3">
+                <label for="nameFormControlInput" class="form-label">Как вас зовут?</label>
+                <input type="email" class="form-control" id="nameFormControlInput" placeholder="Евгений Сергеевич">
+              </div>
+              <div class="mb-3">
+                <label for="emailControlInput" class="form-label">Ваш Email адрес</label>
+                <input type="email" class="form-control" id="emailControlInput" placeholder="zakaz@upak77.ru">
+              </div>
+              <div class="mb-3">
+                <label for="phoneFormControlInput" class="form-label">Номер вашего телефона</label>
+                <input type="tel" class="form-control" id="phoneFormControlInput" placeholder="+79261112233">
+              </div>
+              <div class="mb-3">
+                <label for="subjectDataList" class="form-label">Укажите тему письма: </label>
+                <select class="form-select" aria-label="Default select example" id="subjectDataList"
+                  placeholder="Заказ?...">
+                  <option selected label="Заказ" value="order">Заказ</option>
+                  <option label="Есть вопрос" value="question">Есть вопрос</option>
+                  <option label="Перезвоните мне" value="callme">Перезвоните мне</option>
+                  <option label="Другое..." value="other">Другое...</option>
+                </select>
+                <div class="mb-3">
+                  <label for="areaFormControlTextarea" class="form-label">Опишите ваш вопрос тут</label>
+                  <textarea class="form-control" id="areaFormControlTextarea" rows="3"></textarea>
+                </div>
+            </form>
+          </div>
+        </div>
+        <div class="about__fourth">
           <p>Вы всегда можете приехать к нам в офис. Сотрудники нашей компании открыты к общению с новыми клиентами и
             будут рады лично встретиться с Вами,
             предоставить полную информацию о продукции, продемонстрировать ее ассортимент и качество.</p>
           <p>Будьте уверены, что ТПК Ультрапак обязательно найдет самые выгодные упаковочные решения для Вашего заказа!
           </p>
         </div>
-        <div class="about__fourth">
-          <h4>Так-же вы можете написать нам ниже на форму обратной связи:</h4>
-          <form action="" method="post">
-            <div class="mb-3">
-              <label for="nameFormControlInput" class="form-label">Как вас зовут?</label>
-              <input type="email" class="form-control" id="nameFormControlInput" placeholder="Евгений Сергеевич">
-            </div>
-            <div class="mb-3">
-              <label for="emailControlInput" class="form-label">Ваш Email адрес</label>
-              <input type="email" class="form-control" id="emailControlInput" placeholder="zakaz@upak77.ru">
-            </div>
-            <div class="mb-3">
-              <label for="phoneFormControlInput" class="form-label">Номер вашего телефона</label>
-              <input type="tel" class="form-control" id="phoneFormControlInput" placeholder="+79261112233">
-            </div>
-            <div class="mb-3">
-              <label for="subjectDataList" class="form-label">Укажите тему письма: </label>
-              <select class="form-select" aria-label="Default select example" id="subjectDataList" placeholder="Заказ?...">
-                <option selected label="Заказ" value="order">Заказ</option>
-                <option label="Есть вопрос" value="question">Есть вопрос</option>
-                <option label="Перезвоните мне" value="callme">Перезвоните мне</option>
-                <option label="Другое..." value="other">Другое...</option>
-                </select>
-            <div class="mb-3">
-              <label for="areaFormControlTextarea" class="form-label">Опишите ваш вопрос тут</label>
-              <textarea class="form-control" id="areaFormControlTextarea" rows="3"></textarea>
-            </div>
-          </form>
-        </div>
       </div>
     </div>
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="footer__social">
-          <p>ЕЖЕДНЕВНО с 10 до 19</p>
-          <p class="footer__number">+7(929)963-39-18</p>
-          <span>Присоединяйтесь</span>
-          <div class="footer__social-icons">
-            <div class="footer__social-icon">
-              <a href=""><img src="/wwwroot/img/vk.png" alt="vk"></a>
-            </div>
-            <div class="footer__social-icon">
-              <a href=""><img src="/wwwroot/img/whatsapp.png" alt="what"></a>
-            </div>
-            <div class="footer__social-icon">
-              <a href=""><img src="/wwwroot/img/telegram.png" alt="tele"></a>
-            </div>
-            <div class="footer__social-icon">
-              <a href=""><img src="/wwwroot/img/instagram.png" alt="inst"></a>
-            </div>
+  </div>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__social">
+        <p>ЕЖЕДНЕВНО с 10 до 19</p>
+        <p class="footer__number">+7(929)963-39-18</p>
+        <span>Присоединяйтесь</span>
+        <div class="footer__social-icons">
+          <div class="footer__social-icon">
+            <a href=""><img src="/wwwroot/img/vk.png" alt="vk"></a>
+          </div>
+          <div class="footer__social-icon">
+            <a href=""><img src="/wwwroot/img/whatsapp.png" alt="what"></a>
+          </div>
+          <div class="footer__social-icon">
+            <a href=""><img src="/wwwroot/img/telegram.png" alt="tele"></a>
+          </div>
+          <div class="footer__social-icon">
+            <a href=""><img src="/wwwroot/img/instagram.png" alt="inst"></a>
           </div>
         </div>
-        <div class="footer__links">
-          <p>Быстрые ссылки</p>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Услуги</a></li>
-          <li><a href="#">Вики</a></li>
-          <li><a href="#">Поставщикам</a></li>
-          <li><a href="#">О компании</a></li>
-          <li><a href="#">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="footer__form">
-          <form action="" method="post">
-            <div class="mb-3">
-              <label for="footer__form-emailimput" class="form-label">Ваша почта: </label>
-              <input type="email" class="form-control" id="footer__form-emailimput" placeholder="name@yandex.ru">
-            </div>
-            <div class="mb-3">
-              <label for="footer__form-textarea" class="form-label">Пишите нам: </label>
-              <textarea class="form-control" id="footer__form-textarea" rows="3"></textarea>
-            </div>
-          </form>
-        </div>
       </div>
-      <div class="footer__logo">
-        <a href="" class="header__logo">
-          <img src="/wwwroot/img/logo.png" alt="">
-        </a>
+      <div class="footer__links">
+        <p>Быстрые ссылки</p>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Вики</a></li>
+        <li><a href="#">Поставщикам</a></li>
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Контакты</a></li>
+        </ul>
       </div>
-      <div class="footer__copy">
-        <a href="#"><i>&copy;</i>2022 Sveshnikov Artur </a>
+      <div class="footer__form">
+        <form action="" method="post">
+          <div class="mb-3">
+            <label for="footer__form-emailimput" class="form-label">Ваша почта: </label>
+            <input type="email" class="form-control" id="footer__form-emailimput" placeholder="name@yandex.ru">
+          </div>
+          <div class="mb-3">
+            <label for="footer__form-textarea" class="form-label">Пишите нам: </label>
+            <textarea class="form-control" id="footer__form-textarea" rows="3"></textarea>
+          </div>
+        </form>
       </div>
-    </footer>
+    </div>
+    <div class="footer__logo">
+      <a href="" class="header__logo">
+        <img src="/wwwroot/img/logo.png" alt="">
+      </a>
+    </div>
+    <div class="footer__copy">
+      <a href="#"><i>&copy;</i>2022 Sveshnikov Artur </a>
+    </div>
+  </footer>
   </div>
   <script src="/wwwroot/js/slider.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
