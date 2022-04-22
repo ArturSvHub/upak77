@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+
+@import './form/formstyles.scss';
+@import './tabs/tabs.scss';
+
 $acent-color: #ce2874;
 $second-color: #5593dd;
 
@@ -52,8 +56,11 @@ body {
 }
 
 .wrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header {
@@ -88,6 +95,7 @@ header {
 
 .header__info-first,
 .header__info-second {
+  padding-bottom: 20px;
   margin-right: 20px;
   flex-direction: column;
   display: flex;
@@ -216,6 +224,7 @@ header {
 
 .content {
   width: 90%;
+  align-self: center;
   margin: auto auto;
   margin-block: 30pt;
   display: flex;
@@ -299,6 +308,10 @@ h3 {
     font-size: 32px;
     line-height: 1.8;
   }
+  li{
+    font-size: 20px;
+    line-height: 3;
+  }
   
 }
 
@@ -310,7 +323,6 @@ h3 {
 }
 
 .footer {
-  height: auto;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
@@ -319,7 +331,8 @@ h3 {
   width: 100%;
   height: 100%;
   background-color: rgb(102, 102, 102);
-  margin-top: 50pt;
+  margin: 50px 0 0 0;
+  padding: 0;
 }
 
 .footer__wrapper {
@@ -432,42 +445,33 @@ h3 {
 .swiper {
   width: 100%;
   height: 100%;
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Chrome/Safari/Opera */
-  -khtml-user-select: none;
-  /* Konqueror */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
   user-select: none;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
 
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+}
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-
-
-@media (max-width: 1600px) {}
+@media (max-width: 1600px) {
+  .service{
+    grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+  }
+}
 
 @media (max-width: 1200px) {
   .header__link {
@@ -498,4 +502,5 @@ h3 {
   .footer__links {
     font-size: large;
   }
+  
 }

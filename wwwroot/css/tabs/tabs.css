@@ -1,0 +1,91 @@
+.tabs {
+  border: 1px solid #e0e0e0;
+}
+
+.tabs__nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #eee;
+}
+
+.tabs__btn {
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.tabs__btn_active {
+  background: #fff;
+  cursor: default;
+}
+
+.tabs__btn:not(.tabs__btn_active):hover,
+.tabs__btn:not(.tabs__btn_active):focus {
+  background-color: #eee;
+}
+
+.tabs__content {
+  padding: 1rem;
+}
+
+.tabs__pane {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.tabs__pane_show {
+  display: block;
+}
+
+.service {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2%;
+  width: 100%;
+  height: 900px;
+}
+
+.service-1 {
+  background-color: rgb(252, 205, 205);
+}
+
+.service-2 {
+  background-color: rgb(178, 240, 245);
+}
+
+.service-3 {
+  background-color: rgb(186, 241, 169);
+}
+
+.icon-box {
+  padding-block: 20px;
+  max-width: 300px;
+}
+.icon-box img {
+  width: 100%;
+  height: 100%;
+  min-height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.service-name {
+  padding-block: 10px;
+  font-size: 22px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  color: aqua;
+}

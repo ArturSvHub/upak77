@@ -1,4 +1,199 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+.form-list {
+  max-width: 800px;
+}
+
+.form-list li {
+  display: flex;
+  position: relative;
+}
+
+.form-list li + li {
+  margin-top: 24px;
+}
+
+.form-list label {
+  width: 192px;
+  flex-shrink: 0;
+  text-align: right;
+  padding: 10px 24px 0 0;
+}
+
+.form-list label + div {
+  width: calc(100% - 192px);
+}
+
+.form-list button {
+  height: 36px;
+  font-size: 12px;
+  line-height: 38px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 24px;
+  border: none;
+  border-radius: 5px;
+  background: #058cd0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.form-list button:hover {
+  background: #0497e0;
+}
+
+.form-control {
+  width: 100%;
+  height: 36px;
+  font-size: 15px;
+  line-height: 36px;
+  padding: 0 10px;
+  border: solid 1px #c6c6c6;
+  border-radius: 3px;
+  background: #fff;
+}
+
+.form-control:focus {
+  color: #3c464e;
+  border: solid 1px #82b0d5;
+  box-shadow: 0 0 9px rgba(23, 198, 254, 0.37), inset 0 1px 2px rgba(91, 114, 132, 0.3);
+}
+
+input[type=text].form-control {
+  max-width: 400px;
+}
+
+textarea.form-control {
+  max-width: 600px;
+  height: 156px;
+  display: block;
+  font: normal 15px/20px Roboto, Verdana, sans-serif;
+  resize: none;
+}
+
+.error {
+  max-width: 260px;
+  display: none;
+  font-size: 13px;
+  line-height: 15px;
+  color: #fff;
+  position: absolute;
+  left: 216px;
+  top: calc(100% + 8px);
+  z-index: 100;
+  padding: 6px 10px 7px;
+  border-radius: 6px;
+  background: #d24a4a;
+}
+
+.error:before {
+  width: 0;
+  height: 0;
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: -7px;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-bottom: 8px solid #d24a4a;
+}
+
+.form-control_error {
+  border-color: #d24a4a;
+}
+
+.tabs {
+  border: 1px solid #e0e0e0;
+}
+
+.tabs__nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  border-bottom: 1px solid #e0e0e0;
+  background-color: #eee;
+}
+
+.tabs__btn {
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.tabs__btn_active {
+  background: #fff;
+  cursor: default;
+}
+
+.tabs__btn:not(.tabs__btn_active):hover,
+.tabs__btn:not(.tabs__btn_active):focus {
+  background-color: #eee;
+}
+
+.tabs__content {
+  padding: 1rem;
+}
+
+.tabs__pane {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.tabs__pane_show {
+  display: block;
+}
+
+.service {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2%;
+  width: 100%;
+  height: 900px;
+}
+
+.service-1 {
+  background-color: rgb(252, 205, 205);
+}
+
+.service-2 {
+  background-color: rgb(178, 240, 245);
+}
+
+.service-3 {
+  background-color: rgb(186, 241, 169);
+}
+
+.icon-box {
+  padding-block: 20px;
+  max-width: 300px;
+}
+.icon-box img {
+  width: 100%;
+  height: 100%;
+  min-height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.service-name {
+  padding-block: 10px;
+  font-size: 22px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  color: aqua;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -47,8 +242,11 @@ body {
 }
 
 .wrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header {
@@ -83,6 +281,7 @@ header {
 
 .header__info-first,
 .header__info-second {
+  padding-bottom: 20px;
   margin-right: 20px;
   flex-direction: column;
   display: flex;
@@ -206,6 +405,7 @@ header {
 
 .content {
   width: 90%;
+  align-self: center;
   margin: auto auto;
   margin-block: 30pt;
   display: flex;
@@ -283,6 +483,10 @@ h3 {
   font-size: 32px;
   line-height: 1.8;
 }
+.about__ul li {
+  font-size: 20px;
+  line-height: 3;
+}
 
 .footer,
 .footer a {
@@ -292,7 +496,6 @@ h3 {
 }
 
 .footer {
-  height: auto;
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
@@ -301,7 +504,8 @@ h3 {
   width: 100%;
   height: 100%;
   background-color: rgb(102, 102, 102);
-  margin-top: 50pt;
+  margin: 50px 0 0 0;
+  padding: 0;
 }
 
 .footer__wrapper {
@@ -414,38 +618,33 @@ h3 {
 .swiper {
   width: 100%;
   height: 100%;
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Chrome/Safari/Opera */
-  -khtml-user-select: none;
-  /* Konqueror */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
   user-select: none;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
+  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
 }
 
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1600px) {
+  .service {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
 @media (max-width: 1200px) {
   .header__link {
     font-size: small;
