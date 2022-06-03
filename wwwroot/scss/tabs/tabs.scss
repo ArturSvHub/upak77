@@ -39,7 +39,7 @@
   .tabs__pane {
     display: none;
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   .tabs__pane_show {
@@ -48,20 +48,16 @@
   .service{
 
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      gap: 2%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 6%;
       width: 100%;
-      height: 900px;
   }
   .service-1{
-      background-color: rgb(252, 205, 205);
 }
 .service-2{
-    background-color: rgb(178, 240, 245);
 }
 .service-3{
-    background-color: rgb(186, 241, 169);
 }
   .icon-box {
       padding-block: 20px;
@@ -78,8 +74,27 @@
     padding-block: 10px;
     font-size: 22px;
 }
-.card {
+.scard {
 width: 100%;
 height: 100%;
-color: aqua;
+ul{
+  font-size: 28px;
+  line-height: 3;
+  text-align: center;
+  li{
+    text-align: start;
+    font-size: 22px;
+    line-height: 2;
+    padding-left: 50px;
+    background-image: url("/wwwroot/img/services/service/down.png");
+	  background-repeat: no-repeat;
+	  background-position: left start;
+	  background-size: 40px;
+  }
+}
+}
+.heading{
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-size: 26px;
 }
